@@ -6,12 +6,13 @@
     --color-black-light: #212121;
     --color-heading: #2F303A;
     --color-hero-button: #FFFFFF;
+    --color-filter-button: #F5F4FA;
     --font-Web-Studio: 'Raleway', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     color: var(--color-base);
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 
@@ -37,7 +38,7 @@ body {
     overflow: hidden;
 }
 
-/* header */
+/* Header */
 .logo {
     font-family: var(--font-Web-Studio);
     font-weight: 700;
@@ -72,7 +73,7 @@ body {
     color: var(--color-blue);
 }
 
-/* main */
+/* Main */
 .section-hero {
     width: 1600px;
     height: 600px;
@@ -93,12 +94,14 @@ body {
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
     font-family: inherit;
     font-size: 16px;
     line-height: 1.9;
     font-weight: 700;
     color: var(--color-hero-button);
-    cursor: pointer;
     background-color: var(--color-blue);
 }
 
@@ -153,18 +156,18 @@ body {
 }
 
 .address-footer {
+    color: var(--color-hero-button);
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-hero-button);
 }
 
 .mail-footer,
 .tel-footer {
+    color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .address-footer:hover,
@@ -174,4 +177,41 @@ body {
 .tel-footer:hover,
 .tel-footer:focus {
     color: var(--color-blue);
+}
+
+/* Portfolio */
+.filter-button {
+    width: 125px;
+    height: 38px;
+    background: var(--color-filter-button);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black-light); 
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background: var(--color-blue);
+    color: var(--color-hero-button);
+}
+
+.filter-list-title {
+    color: var(--color-black-light);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.filter-list-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
